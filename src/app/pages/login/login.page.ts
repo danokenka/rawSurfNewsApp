@@ -4,6 +4,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { AlertController, LoadingController } from '@ionic/angular';
 import { Router } from '@angular/router';
 
+
 @Component({
   selector: 'app-login',
   templateUrl: './login.page.html',
@@ -48,6 +49,10 @@ export class LoginPage implements OnInit {
         await alert.present();
       }
     );
+  }
+
+  signUp() {
+
   }
  
   // Easy access for form fields

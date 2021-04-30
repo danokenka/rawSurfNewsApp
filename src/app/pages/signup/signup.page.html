@@ -1,0 +1,93 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-icon [routerLink]="['/', 'login']"color="light" name="chevron-back-outline"></ion-icon>
+    <ion-title color="light">Sign Up Page</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+
+
+
+<ion-content color="secondary">
+  <br>
+Fill out the form below to sign up
+<form>
+  <ion-item color="dark" lines="full">
+    <ion-label position="floating">First name</ion-label>
+    <ion-input type="text" required></ion-input>
+  </ion-item>
+
+  <ion-item color="dark" lines="full">
+    <ion-label position="floating">Last name</ion-label>
+    <ion-input type="text" required></ion-input>
+  </ion-item>
+
+  <ion-item color="dark" lines="full">
+    <ion-label position="floating">Email</ion-label>
+    <ion-input type="text" required></ion-input>
+  </ion-item>
+
+  <ion-item color="dark" lines="full">
+    <ion-label position="floating">Password</ion-label>
+    <ion-input type="password" required></ion-input>
+  </ion-item>
+
+  <ion-row>
+    <ion-col>
+      <ion-button type="submit" color="danger" expand="block"><ion-icon name="log-in-outline" slot="start"></ion-icon>Sign Up</ion-button>
+    </ion-col>
+  </ion-row>
+</form>
+
+<!-- <ion-input inputmode="email" placeholder="Enter Email" color="light"></ion-input>
+<ion-input placeholder="Enter Password" color="light"></ion-input> -->
+<!-- <ion-item color="dark">
+  <ion-input type="email" placeholder="Email" ></ion-input>
+</ion-item> -->
+
+<!-- <ion-button type="button" expand="block" color="secondary">
+  <ion-icon name="log-in-outline" slot="start"></ion-icon>
+  Sign Up
+</ion-button> -->
+
+
+<ion-button type="button" expand="block" color="dark">
+  <ion-icon name="logo-google" slot="start"></ion-icon>
+  Sign Up with Google
+</ion-button>
+<ion-button type="button" expand="block" color="dark">
+  <ion-icon name="logo-apple" slot="start"></ion-icon>
+  Sign Up with Apple
+</ion-button>
+
+<!-- <br><br><br>
+<ion-button type="button" expand="block" color="tertiary">
+  <ion-icon name="caret-back-outline" slot="start"></ion-icon>
+  Back to Login
+</ion-button> -->
+
+</ion-content>
+
+
+<!-- 
+<ion-content>
+  <form>
+    <ion-item lines="full">
+      <ion-label position="floating">Email</ion-label>
+      <ion-input type="text" required></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label position="floating">Password</ion-label>
+      <ion-input type="password" required></ion-input>
+    </ion-item>
+
+    <ion-row>
+      <ion-col>
+        <ion-button type="submit" color="danger" expand="block">Sign In</ion-button>
+        <a [routerLink]="['/forgot-password']" class="small-text">Forgot Password?</a>
+      </ion-col>
+    </ion-row>
+  </form>
+</ion-content> -->

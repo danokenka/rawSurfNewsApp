@@ -1,6 +1,6 @@
 <ion-header>
   <ion-toolbar color="primary">
-    <ion-title>RawSurfNews App</ion-title>
+    <ion-title color="light">Raw Surf App</ion-title>
   </ion-toolbar>
 </ion-header>
  
@@ -8,14 +8,14 @@
  
   <form (ngSubmit)="login()" [formGroup]="credentials">
     <div class="input-group">
-      <ion-item>
+      <ion-item color="dark">
         <ion-input type="email" placeholder="Email" formControlName="email"></ion-input>
       </ion-item>
       <div *ngIf="(email.dirty || email.touched) && email.errors" class="errors">
         <span *ngIf="email.errors?.required">Email is required</span>
         <span *ngIf="email.errors?.email">Email is invalid</span>
       </div>
-      <ion-item>
+      <ion-item color="dark">
         <ion-input type="password" placeholder="Password" formControlName="password"></ion-input>
       </ion-item>
       <div *ngIf="(password.dirty || password.touched) && password.errors" class="errors">
@@ -24,15 +24,19 @@
       </div>
     </div>
  
-    <ion-button type="submit" expand="block" [disabled]="!credentials.valid">Log in</ion-button>
-    <ion-button type="button" expand="block" color="light" fill="clear">Not yet a member? Sign up!
+    <ion-button class="ion-submit" type="submit" color="secondary" expand="block" [disabled]="!credentials.valid">Log in</ion-button>
+    <ion-button [routerLink]="['/', 'signup']" type="button" expand="block" color="primary" fill="clear">Not yet a member? Sign up!
     </ion-button>
+     <!-- <ion-buttons> 
+         <button ion-button (click)="goHome()">Go back </button> 
+       
+      </ion-buttons> -->
  
-    <ion-button type="button" expand="block" color="tertiary">
+    <ion-button type="button" expand="block" color="light">
       <ion-icon name="logo-google" slot="start"></ion-icon>
       Sign in with Google
     </ion-button>
-    <ion-button type="button" expand="block" color="tertiary">
+    <ion-button type="button" expand="block" color="light">
       <ion-icon name="logo-apple" slot="start"></ion-icon>
       Sign in with Apple
     </ion-button>
