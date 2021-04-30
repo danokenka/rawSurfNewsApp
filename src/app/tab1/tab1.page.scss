@@ -1,0 +1,33 @@
+// ion-tab-bar, ion-tab-button{
+//  background-color: #EA423A;
+// }
+ion-toolbar{
+    background-color: var(--ion-color-primary);
+}
+// ion-title{
+//     background-color: #EA423A; 
+// }
+ion-content{
+    background-color: var(rsmain);
+   }
+// ion-icon{
+//   color: #d7d8da;
+// }
+
+.toolbar-title {
+    text-overflow: inherit;
+    white-space: normal;
+ }
+
+
+.center {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        width: 50%;
+      }
+
+      .content{
+        background-color: var(--ion-color-primary);
+      }
